@@ -11,7 +11,7 @@ This application is packaged as a war which has Tomcat 8 embedded. No Tomcat or 
 * You can build the project and run the tests by running ```./gradlew clean build```
 * Once successfully built, you can run the service by one of these two methods:
 ```
-        java -jar -Dspring.profiles.active=test build/lib/OfferRewardsApi-0.0.1-SNAPSHOT.jar
+        java -jar -Dspring.profiles.active=local build/lib/OfferRewardsApi-0.0.1-SNAPSHOT.jar
 
 ```
 * Check the stdout or boot_example.log file to make sure no exceptions are thrown
