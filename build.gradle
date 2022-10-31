@@ -1,0 +1,49 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.6-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'java'
+}
+
+group = 'com.retail'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.2'
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.7.5'
+
+
+//junit libraries
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+	
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'com.retail.offer.OfferAwardsApplication'
+    }
+    baseName = project.name + '-all'
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,8 @@
+spring:
+  config:
+   activate:
+    on-profile: local
+
+offerRewardsApi:
+ rewardsMultiplierAbove100: 2
+ rewardsMultiplierAbove50: 1

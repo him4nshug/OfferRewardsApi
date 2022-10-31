@@ -1,0 +1,38 @@
+{
+    "customerRewardPointsVO": [
+        {
+            "customerID": "1",
+            "aggregateRewardPoints": 158,
+            "rewardPointsPerMonth": {
+                "OCTOBER": 106,
+                "SEPTEMBER": 52
+            }
+        },
+        {
+            "customerID": "2",
+            "aggregateRewardPoints": 158,
+            "rewardPointsPerMonth": {
+                "AUGUST": 52,
+                "SEPTEMBER": 106
+            }
+        },
+        {
+            "customerID": "3",
+            "aggregateRewardPoints": 158,
+            "rewardPointsPerMonth": {
+                "OCTOBER": 52,
+                "AUGUST": 52,
+                "JULY": 54
+            }
+        },
+        {
+            "customerID": "4",
+            "aggregateRewardPoints": 158,
+            "rewardPointsPerMonth": {
+                "MAY": 52,
+                "MARCH": 52,
+                "APRIL": 54
+            }
+        }
+    ]
+}

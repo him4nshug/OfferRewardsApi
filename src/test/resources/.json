@@ -1,0 +1,53 @@
+{
+   
+"transactions": [
+   { "customerId":"1",
+    "amount":101,
+    "transactionDate":"2022/10/09"
+   },
+   { "customerId":"1",
+    "amount":102,
+    "transactionDate":"2022/10/08"
+   },
+   { "customerId":"1",
+    "amount":101,
+    "transactionDate":"2022/09/08"
+   },
+   { "customerId":"1",
+    "amount":101,
+    "transactionDate":"2022/09/09"
+   },
+   { "customerId":"2",
+    "amount":102,
+    "transactionDate":"2022/09/08"
+   },{ "customerId":"2",
+    "amount":101,
+    "transactionDate":"2022/08/08"
+   },
+    { "customerId":"3",
+    "amount":101,
+    "transactionDate":"2022/10/09"
+   },
+   { "customerId":"3",
+    "amount":102,
+    "transactionDate":"2022/07/08"
+   },{ "customerId":"3",
+    "amount":101,
+    "transactionDate":"2022/08/08"
+   },
+   { "customerId":"4",
+    "amount":101,
+    "transactionDate":"2022/03/09"
+   },
+   { "customerId":"4",
+    "amount":102,
+    "transactionDate":"2022/04/08"
+   },
+   { "customerId":"4",
+    "amount":101,
+    "transactionDate":"2022/05/08"
+   }
+]
+
+
+}
